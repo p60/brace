@@ -1623,7 +1623,6 @@ var XmlHighlightRules = function(normalize) {
     this.$rules = {
         start : [
             {token : "string.cdata.xml", regex : "<\\!\\[CDATA\\[", next : "cdata"},
-            {token : "liquid", regex : "<%(.*?)(?=s*)%>"},
             {
                 token : ["punctuation.xml-decl.xml", "keyword.xml-decl.xml"],
                 regex : "(<\\?)(xml)(?=[\\s])", next : "xml_decl", caseInsensitive: true
